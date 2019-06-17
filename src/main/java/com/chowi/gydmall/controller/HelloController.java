@@ -13,4 +13,10 @@ public class HelloController {
     public String index(){
         return "hi,Jenkins";
     }
+
+    @RequestMapping(value = "say")
+    @ResponseBody
+    public String say(){
+        return "i can tell you";
+    }
 }
